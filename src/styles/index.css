@@ -7,7 +7,7 @@
     
 @font-face {
     font-family: ChirpRegular;
-    src: url("/assets/fonts/chirp-regular-web.woff");
+    src: url("/src/assets/fonts/chirp-regular-web.woff");
     }
 
 body {
