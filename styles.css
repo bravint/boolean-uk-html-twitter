@@ -6,12 +6,12 @@
     
     @font-face {
         font-family: ChirpRegular;
-        src: url("chirp-regular-web.woff");
+        src: url("/assets/fonts/chirp-regular-web.woff");
     }
 
     @font-face {
         font-family: ChirpMedium;
-        src: url("chirp-medium-web.woff");
+        src: url("/assets/fonts/chirp-medium-web.woff");
     }
 
 body {
