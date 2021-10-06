@@ -2,21 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: ChirpRegular;
     }
     
-    @font-face {
-        font-family: ChirpRegular;
-        src: url("/assets/fonts/chirp-regular-web.woff");
-    }
-
-    @font-face {
-        font-family: ChirpMedium;
-        src: url("/assets/fonts/chirp-medium-web.woff");
+@font-face {
+    font-family: ChirpRegular;
+    src: url("/assets/fonts/chirp-regular-web.woff");
     }
 
 body {
     max-width: 1225px;
     margin: auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 .page {
@@ -32,9 +32,11 @@ body {
 }
 
 #twitterLogo,
-#home,
-#home text {
+#home {
     fill: rgb(29, 155, 240);
+}
+
+#home .text {
     color: rgb(29, 155, 240);
 }
 
@@ -43,28 +45,20 @@ body {
     height: 26.25px;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
 
 nav {
-    font-family: ChirpMedium;
     height: 100vh;
     width: 275px;
     padding: 12px;
     display: flex;
-    row-gap: 30px;
     flex-direction: column;
+    gap: 30px;
 }
 
 .navGridMid {
     display: flex;
-    row-gap: 30px;
     flex-direction: column;
+    gap: 30px;
 }
 
 .text,
@@ -75,26 +69,26 @@ nav {
 
 .text {
     margin-left: 20px;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
 .navGridBottom {
+    height: 100%;  
     display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .tweetButtonContainer {
-    font-size: 20px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(29, 155, 240);
-    color: white;
     border-radius: 30px;
+    font-size: 1.2rem;
+    color: white;
 }
 
 .userDisplayContainer {
@@ -129,8 +123,7 @@ main {
 }
 
 .homeBartext {
-    font-family: ChirpMedium;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
@@ -161,10 +154,10 @@ main {
 }
 
 .status {
-    font-family: ChirpMedium;
     place-items: start center;
     color: gray;
-    font-size: 22px;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .statusBarBottom {
@@ -185,8 +178,8 @@ main {
 }
 
 .statusTweetButton {
-    font-family: ChirpMedium;
-    font-size: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
     height: 50px;
     width: 100px;
     display: flex;
@@ -204,7 +197,6 @@ main {
 
 .tweetListItem {
     padding: 20px;
-    font-family: ChirpMedium;
     font-size: 1 rem;
     line-height: 1.5rem;
     display: flex;
@@ -234,6 +226,7 @@ main {
     justify-content: space-between;
     margin: 10px 0px;
 }
+
 .tweetMainStatusBar > *,
 .tweetListItemRTIcon {
 width: 20px;
@@ -250,7 +243,6 @@ height: 20px;
 }
 
 .sidebar {
-    font-family: ChirpMedium;
     margin: 5px;
     width: 350px;
     display: flex;
@@ -283,13 +275,11 @@ height: 20px;
 }
 
 .moreNews {
-    color: rgb(29, 155, 240);
-
-    
+    color: rgb(29, 155, 240);   
 }
 
 .headlines {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .relatedNewsItem {
