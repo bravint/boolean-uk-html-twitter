@@ -227,7 +227,6 @@ main {
 .tweetMain {
     display: flex;
     flex-direction: column;
-
 }
 
 .tweetMainStatusBar {
