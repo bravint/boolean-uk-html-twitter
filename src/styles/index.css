@@ -314,6 +314,7 @@ height: 20px;
 .content {
     width: 470px;
     height: 70px;
+    border: none;
 }
 
 textarea {
