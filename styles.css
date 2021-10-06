@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    @font-face {
+        font-family: ChirpRegular;
+        src: url("chirp-regular-web.woff");
+    }
+
+    @font-face {
+        font-family: ChirpMedium;
+        src: url("chirp-medium-web.woff");
+    }
+
+body {
+    max-width: 1225px;
+    margin: auto;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+}
+
+/*NAVIGATION BAR*/
+
+#twitterLogo {
+    width: 30px;
+    height: 30px;
+}
+
+#twitterLogo,
+#home,
+#home text {
+    fill: rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
+}
+
+.navIcon{
+    width: 26.25px;
+    height: 26.25px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    font-family: ChirpMedium;
+    height: 100vh;
+    width: 275px;
+    padding: 12px;
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+}
+
+.navGridMid {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+}
+
+.text,
+.navIcon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text {
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.navGridBottom {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tweetButtonContainer {
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border-radius: 30px;
+}
+
+.userDisplayContainer {
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.feed {
+    padding: 12px 0px;
+    flex: 1;
+    margin: 0px 10px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.homeBar{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.homeBar > div {
+    margin: 0px 20px;
+}
+
+.homeBartext {
+    font-family: ChirpMedium;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.homeBaricon {
+    fill: rgb(29, 155, 240);
+    width: 30px;
+    height: 30px;
+}
+
+.statusBar {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.statusBarTop {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0px;
+}
+
+.userAvatar {
+    margin: 0px 20px;
+    width: 40px;
+}
+
+.status {
+    font-family: ChirpMedium;
+    place-items: start center;
+    color: gray;
+    font-size: 22px;
+}
+
+.statusBarBottom {
+    display: flex;
+    margin: 20px 20px 0px 20px;
+    justify-content: space-between;
+}
+
+.statusBarBottom  {
+    margin-left: 80px;
+    align-items: center;
+}
+
+.statusBarBottomIcon > svg {
+    width: 30px;
+    height: 30px;
+    fill: rgb(29, 155, 240);
+}
+
+.statusTweetButton {
+    font-family: ChirpMedium;
+    font-size: 20px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62bdfa;
+    color: white;
+    border-radius: 30px;
+}
+
+.spacer {
+    background-color: rgb(241, 241, 241);
+    height: 10px;
+}
+
+.tweetListItem {
+    padding: 20px;
+    font-family: ChirpMedium;
+    font-size: 1 rem;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightgray;
+}
+
+.tweetListItemRT {
+    color: grey;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    margin: 0px 10px 0px 50px;
+}
+
+.tweetListItemActual {
+    display: flex;
+}
+
+.tweetMain {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tweetMainStatusBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.tweetMainStatusBar > *,
+.tweetListItemRTIcon {
+width: 20px;
+height: 20px;
+}
+
+.greytext {
+    color: grey;
+}
+
+.elephant {
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.sidebar {
+    width: 350px;
+    display: flex;
+}
+
+.search {
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border-radius: 30px;
+}
