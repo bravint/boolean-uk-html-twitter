@@ -17,6 +17,13 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+    background-color: lightgray;
+    border-radius: 30px;
 }
 
 .page {
@@ -26,9 +33,16 @@ a {
 
 /*NAVIGATION BAR*/
 
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
 #twitterLogo {
     width: 30px;
     height: 30px;
+    margin-left: 10px
 }
 
 #twitterLogo,
@@ -49,22 +63,25 @@ a {
 nav {
     height: 100vh;
     width: 275px;
-    padding: 12px;
+    padding: 12px 2px 12px 12px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .navGridMid {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
 .text,
 .navIcon {
     display: inline-block;
+    height: 40px;
+    margin: 13px 0px 0px 10px;
     vertical-align: middle;
+    text-align: center;
 }
 
 .text {
@@ -96,6 +113,8 @@ nav {
     justify-content: center;
     color: grey;
 }
+
+/*FEED*/
 
 main {
     display: flex;
@@ -241,6 +260,8 @@ height: 20px;
     margin-top: 10px;
     border-radius: 20px;
 }
+
+/*RHS BAR*/
 
 .sidebar {
     margin: 5px;
